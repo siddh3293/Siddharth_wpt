@@ -1,0 +1,13 @@
+//Created by siddharthsinha on 26/10/15.
+
+doctype html
+html
+   head
+      title siddh
+      link(rel='stylesheet', href='/stylesheets/style.css')
+      script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js')
+   body
+       h1 #{url}
+      #graphdiv(style="width:500px; height=700px;")
+      script(type='text/javascript').
+          g = new Dygraph(document.getElementById("graphdiv"),"Date,ttfb,loadtime\n"+"#{final_str}");

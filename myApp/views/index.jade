@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title siddh
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js')
+  body
+    h1= title
+    #graphdiv(style="width:2000px; height=700px;")
+    //script(type='text/javascript').
+    //  g =  new Dygraph(document.getElementById("graphdiv"),"Date,ttfb,loadtime,speedindex,visualcomplete\n"+"#{date2},#{TTFB1},#{loadTime},#{speedindex1},#{viscompl1}\n"+"#{date3},#{TTFB2},#{loadTime1},#{speedindex2},#{viscompl2}\n"+"#{date4},#{TTFB3},#{loadTime2},#{speedindex3},#{viscompl3}\n");
